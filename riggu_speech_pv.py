@@ -14,7 +14,7 @@ import google.generativeai as genai
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
 
-os.environ['GENAI_API_KEY'] = 'AIzaSyBR-osMaWgALJehm2mUfElFsfaSvbyEtAA'
+os.environ['GENAI_API_KEY'] = '....'
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 
 genai_key = os.getenv("GENAI_API_KEY")
@@ -25,7 +25,7 @@ class riggutalk():
 
         self.stop_flag = False
         self.listening_flag = False
-        ACCESS_KEY = "swuJ4g7WtF+fGGHw67F+rXIpc0vbP1c0DNuFzDo29eELccjlEXDT5Q==" #acess key for porcupine
+        ACCESS_KEY = "....." #acess key for porcupine
         KEYWORD_FILE_PATH = r"/home/aftaab/Documents/riggu_git/Riggu-2023/Riggu_GUI/riggu_speech/hey-Raghu_en_linux_v2_2_0.ppn"
         # "/ws/Riggu_GUI/riggu_speech/hey-Raghu_en_linux_v2_2_0.ppn"
         # "/home/aftaab/Documents/riggu_git/Riggu-2023/Riggu_GUI/riggu_speech/hey-Raghu_en_linux_v2_2_0.ppn"
@@ -40,7 +40,7 @@ class riggutalk():
 
 
         self.recognizer = speech_recognition.Recognizer()
-        genai.configure(api_key='AIzaSyBR-osMaWgALJehm2mUfElFsfaSvbyEtAA')
+        genai.configure(api_key='......')
         model = genai.GenerativeModel("gemini-pro")
         self.chat = model.start_chat()
         res = self.chat.send_message("""## Gemini Prompt: Riggu the Robot
